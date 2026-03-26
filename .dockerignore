@@ -1,0 +1,42 @@
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.ipynb_checkpoints
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Project-specific
+.git/
+.gitignore
+.gitattributes
+.idea/
+.vscode/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.pre-commit-config.yaml
+.python-version
+
+# Documentation
+*.md
+
+# Build / Distribution
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Development and testing
+tests/
+*.http
+tmp/
+main.py
