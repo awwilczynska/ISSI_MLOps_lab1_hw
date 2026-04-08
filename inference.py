@@ -3,7 +3,7 @@ from sklearn.linear_model import LogisticRegression
 import joblib
 
 
-def load_transformer():
+def load_transformer() -> SentenceTransformer:
     model = SentenceTransformer("models/sentence_transformer.model")
     print("Sentence Transformer successfully loaded")
     return model
