@@ -31,3 +31,14 @@ def test_inference_logic(models, text):
     transformer, classifier = models
     result = sentiment_analysis(text, transformer, classifier)
     assert result in ["positive", "neutral", "negative"]
+
+
+def test_inference_logic2():
+    transformer = load_transformer()
+    classifier = load_classifier()
+    result = sentiment_analysis("I feel really great", transformer, classifier)
+    assert result == "positive"
+    result = sentiment_analysis("I feel sad", transformer, classifier)
+    assert result == "negative"
+    result = sentiment_analysis("I need to buy a ticket", transformer, classifier)
+    assert result == "neutral"
